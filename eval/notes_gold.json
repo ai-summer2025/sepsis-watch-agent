@@ -1,0 +1,21 @@
+{
+ "V01": {"fields": {"temp_c": 38.8, "heart_rate": 118, "sbp": 92, "resp_rate": 24, "spo2": 93, "on_oxygen": false,
+                    "consciousness": "C", "wbc": 15.6, "lactate": 2.8, "platelets": 210, "creatinine": 1.6,
+                    "bilirubin": 0.8, "suspected_infection": true},
+         "category": "sepsis"},
+ "V02": {"fields": {"heart_rate": 126, "sbp": 84, "map": 60, "resp_rate": 30, "spo2": 89, "on_oxygen": true,
+                    "temp_c": 39.4, "consciousness": "C", "lactate": 4.6, "wbc": 2.9, "platelets": 88,
+                    "creatinine": 2.4, "bilirubin": 1.1, "suspected_infection": true},
+         "vasopressors": {"norepinephrine": 0.12},
+         "category": "septic_shock"},
+ "V03": {"fields": {"consciousness": "A", "heart_rate": 84, "sbp": 132, "resp_rate": 16, "spo2": 97, "on_oxygen": false,
+                    "temp_c": 37.2, "wbc": 9.1},
+         "category": "low_risk"},
+ "V04": {"fields": {"respiratory_support": true, "pao2": 64, "fio2": 0.6, "map": 67, "gcs": 9, "platelets": 45,
+                    "bilirubin": 3.2, "creatinine": 1.9, "urine_output_ml_24h": 380, "suspected_infection": true,
+                    "lactate": 1.8},
+         "category": "sepsis"},
+ "V05": {"fields": {"resp_rate": 26, "spo2": 94, "on_oxygen": true, "sbp": 96, "heart_rate": 112, "temp_c": 36.4,
+                    "consciousness": "A", "platelets": 240, "creatinine": 0.9},
+         "category": "deterioration_no_infection_documented"}
+}
