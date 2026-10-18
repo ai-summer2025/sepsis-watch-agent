@@ -1,0 +1,22 @@
+{
+  "id": "synthetic-septic_shock",
+  "resp_rate": 28,
+  "spo2": 90,
+  "on_oxygen": true,
+  "fio2": 0.4,
+  "sbp": 82,
+  "map": 58,
+  "heart_rate": 124,
+  "temp_c": 38.9,
+  "consciousness": "C",
+  "gcs": 13,
+  "wbc": 18,
+  "lactate": 4.2,
+  "platelets": 95,
+  "bilirubin": 2.4,
+  "creatinine": 2.3,
+  "vasopressors": {
+    "norepinephrine": 0.15
+  },
+  "suspected_infection": true
+}
