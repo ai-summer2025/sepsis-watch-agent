@@ -1,0 +1,17 @@
+{
+  "id": "synthetic-boundary_sepsis",
+  "resp_rate": 22,
+  "spo2": 96,
+  "on_oxygen": false,
+  "sbp": 100,
+  "map": 70,
+  "heart_rate": 90,
+  "temp_c": 38.0,
+  "consciousness": "A",
+  "gcs": 15,
+  "wbc": 12,
+  "platelets": 150,
+  "bilirubin": 1.2,
+  "creatinine": 1.2,
+  "suspected_infection": true
+}
