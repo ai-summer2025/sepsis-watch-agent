@@ -188,3 +188,6 @@ def sofa(o: Observation) -> Score:
         missing.append("renal (creatinine or urine output)")
     c["renal"] = max(renal_cr or 0, renal_uo or 0)
     return Score("SOFA", sum(c.values()), c, missing, notes)
+
+# NEWS2 note: confusion assessment maps to the altered consciousness item (score 3).
+# A score of 0 on all items yields NEWS2 = 0 (low risk); the alert threshold is >= 7.
