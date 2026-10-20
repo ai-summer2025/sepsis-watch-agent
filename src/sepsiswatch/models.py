@@ -44,3 +44,7 @@ class Observation:
 
     def to_dict(self) -> dict:
         return asdict(self)
+
+# Severity tiers: CRITICAL → ICU / rapid-response; HIGH → urgent review;
+# MODERATE → close monitoring; LOW → routine care.
+SEVERITY_TIERS: tuple[str, ...] = ("LOW", "MODERATE", "HIGH", "CRITICAL")
