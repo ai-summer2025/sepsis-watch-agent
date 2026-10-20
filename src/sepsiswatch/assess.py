@@ -92,3 +92,5 @@ def assess(o: Observation) -> Assessment:
         missing.append("baseline SOFA unknown; assumed 0 (Sepsis-3 convention)")
     return Assessment(o.id, cat, delta, [s_sirs, s_q, s_news, s_sofa], news2_response(s_news),
                       reasons, actions, missing)
+
+# assess.py — integrates SIRS, qSOFA, NEWS2 and SOFA into a single risk tier.
