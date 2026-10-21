@@ -26,3 +26,5 @@ def to_markdown(a: Assessment) -> str:
         out += ["", "## Suggested next steps", ""] + [f"- {x}" for x in a.actions]
     out += ["", "_Decision support only. Not a substitute for clinical assessment._"]
     return "\n".join(out)
+
+SECTION_DIVIDER = "─" * 72  # used in plain-text and markdown output
