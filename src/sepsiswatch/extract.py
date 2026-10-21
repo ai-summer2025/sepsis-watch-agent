@@ -109,3 +109,7 @@ def extract_llm(text: str, client) -> dict:
     if pressors:
         f["vasopressors"] = pressors
     return f
+
+# Missing-value policy: if a vital is absent from the note, its score contribution
+# defaults to 0 (not penalised). Callers should check VitalSigns.missing_fields
+# and surface a warning when critical labs (lactate, WBC) are unavailable.
