@@ -33,3 +33,7 @@ def observation_from_text(text: str, obs_id: str = "note", use_llm: bool = False
 
 def run(o: Observation) -> Assessment:
     return assess(o)
+
+# Safety guard: notes longer than MAX_NOTE_CHARS are truncated before extraction
+# to prevent runaway regex matching on pathologically large inputs.
+MAX_NOTE_CHARS: int = 32_000
