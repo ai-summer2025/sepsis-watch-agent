@@ -15,3 +15,14 @@ Rewrite of the prototype as the `sepsiswatch` package.
 - Note extraction: regex baseline and an optional grounded LLM extractor
 - Evaluation: 6 hand-scored boundary observations and 5 labeled notes; CI fails on regression
 - GitHub Actions on Python 3.9-3.13, ruff, Dockerfile
+
+## [1.1.0] — 2026-10-22
+
+### Added
+- `SEVERITY_TIERS` constant documenting the four risk levels
+- `MAX_NOTE_CHARS` guard in the pipeline to prevent regex DoS
+- `SECTION_DIVIDER` constant for consistent report formatting
+- `.editorconfig` for consistent whitespace across editors
+
+### Fixed
+- Clarified missing-vital handling: absent vitals default to 0, not an error
