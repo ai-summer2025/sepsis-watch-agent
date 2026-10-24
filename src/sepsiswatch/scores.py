@@ -191,3 +191,12 @@ def sofa(o: Observation) -> Score:
 
 # NEWS2 note: confusion assessment maps to the altered consciousness item (score 3).
 # A score of 0 on all items yields NEWS2 = 0 (low risk); the alert threshold is >= 7.
+
+# SOFA organ-failure components and their maximum individual scores:
+#   Respiratory (PaO2/FiO2)  → 0-4
+#   Coagulation (platelets)  → 0-4
+#   Liver (bilirubin)        → 0-4
+#   Cardiovascular (MAP/vasopressors) → 0-4
+#   CNS (GCS)                → 0-4
+#   Renal (creatinine/UO)    → 0-4
+# Total SOFA >= 2 confirms organ dysfunction for Sepsis-3.
