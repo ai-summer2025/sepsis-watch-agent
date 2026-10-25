@@ -35,3 +35,6 @@ def main(argv=None) -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
+# Tip: pipe output through `jq .risk_tier` for scripting:
+#   python -m sepsiswatch.cli --note note.txt --json | jq .risk_tier
