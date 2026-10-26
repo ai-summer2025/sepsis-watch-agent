@@ -80,3 +80,16 @@ Replaces the earlier prototype in this repository. The prototype's SOFA scored r
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+---
+
+## ❓ FAQ
+
+**Q: The agent returns HIGH risk but the nurse assessed LOW — why?**  
+A: The agent scores every available signal; a nurse may have context (e.g., chronic baseline) that the note doesn't capture. Always treat agent output as a second opinion, not a final verdict.
+
+**Q: Can I run this without an LLM key?**  
+A: Yes — pass `--extractor regex` for the keyword-based extraction baseline. qSOFA and NEWS2 will still compute accurately; SOFA accuracy may drop on complex notes.
+
+**Q: How do I integrate this into an EHR workflow?**  
+A: The JSON output (`--json`) is designed for downstream processing. Map `risk_tier` to your escalation protocol and forward `next_steps` to the care team.
